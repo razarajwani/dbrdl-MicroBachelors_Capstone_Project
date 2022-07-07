@@ -6,6 +6,17 @@ import ContactUs from './contactus.js';
 /*
 Copy the Web Chat code from Watson Assitant and paste it here
 */
+  window.watsonAssistantChatOptions = {
+      integrationID: "79083c6c-165e-4add-bcad-43811cb05a85", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "ab9ca3ed-befb-4ad1-a3e8-141868d63d11", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
 
 class App extends React.Component {
 
