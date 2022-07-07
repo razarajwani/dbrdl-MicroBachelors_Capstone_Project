@@ -28,6 +28,11 @@ class App extends React.Component {
     this.setState({pageshown:<HomePage/>});    
   }
   
+  setPageAboutUs= ()=> {
+    this.setState({pageshown:<AboutUs/>});    
+  }
+  
+
   setPageContactUs = ()=> {
     this.setState({pageshown:<ContactUs/>});    
   }
@@ -41,9 +46,9 @@ class App extends React.Component {
               <li class="nav-item active">
                 <a class="nav-link" href="#" onClick={this.setPageHome}>Home <span class="sr-only">(current)</span></a>
               </li>
-                /*
-                Add more tabs and action items for the tabs to give the dealership website a real feel. 
-                */
+              <li class="nav-item">
+                <a class="nav-link" href="#" onClick={this.setPageAboutUs}>About Us</a>
+              </li>
         
               <li class="nav-item">
                 <a class="nav-link" href="#" onClick={this.setPageContactUs}>Contact Us</a>

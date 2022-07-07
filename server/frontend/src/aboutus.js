@@ -1,18 +1,13 @@
 import './bootstrap.min.css';
 import React from 'react';
 
-class ContactUs extends React.Component {
+class AboutUs extends React.Component {
   render() {
     return (
       <div>
-        
-        <div class="container-fluid px-0 mb-3">
-        <img
-          src="https://source.unsplash.com/1200x400/?phone,contact"
-          class="d-block w-100 mx-0"
-          alt="..."
-        />
-      </div>
+        <div class="container-fluid px-0 mb-3" >
+    <img src="https://source.unsplash.com/1200x400/?business" class="d-block w-100 mx-0" alt="...">
+</div>
 
         <div style={{display:"flex"}}>
         <img src='/contatus.jpeg' style={{width: "300px"}}/>
@@ -29,4 +24,4 @@ class ContactUs extends React.Component {
   }
 }
 
-export default ContactUs;
+export default AboutUs;
